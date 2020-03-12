@@ -1,0 +1,39 @@
+﻿@model HomeDetailsViewModel
+
+@{
+
+    ViewBag.Title = "Employee Details ";
+}
+<div class="container">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-4 pb-2 mb-3 border-bottom">
+        <h2>Employee Details</h2>
+    </div>
+    <div class="list-group-item ">Details</div>
+    <ul class="list-group">
+        <li class="list-group-item ">
+            <div class="container" style="max-width:100%">
+                <div class="row">
+                    <div class=" col-md-2">
+                        <img src="~/images/image1.jpg" class="img-thumbnail" alt="Responsive Image" width="100" height="100">
+                    </div>
+                    <div class=" col-md-10">
+                        <div class="candidateName">
+                            <b>@Html.DisplayFor(model => model.Employee.Name)</b>
+                        </div><br/>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>Email</label><br />
+                                <label>Department</label><br />
+                            </div>
+                            <div class="col-md-6">
+                                <label> @Html.DisplayFor(model => model.Employee.Email)</label><br />
+                                <label>@Html.DisplayFor(model => model.Employee.Department)</label><br />
+                            </div>
+                        </div>
+                        <a asp-action="Index" class="btn btn-info">Back</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

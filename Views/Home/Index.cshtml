@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Employee>
+
+@{
+
+    ViewBag.Title = "Employee List";
+}
+<!--Displaying list of candidates-->
+<div class="container">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-4 pb-2 mb-3 border-bottom">
+        <h2>Employees List</h2>
+    </div>
+    <div class="action">
+        <a asp-controller="Home" asp-action="SaveEmployeeDetails" class="btn btn-info ">Add Employee</a>
+    </div>
+    <table class="table table-hover">
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Actions</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="~/images/image1.jpg" class="img-thumbnail" alt="Responsive Image" width="100" height="100">
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.Name) </td>
+                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                <td>@Html.DisplayFor(modelItem => item.Department)</td>
+                <td>
+                    <a asp-controller="Home" asp-action="SaveEmployeeDetails" asp-route-id="@item.Id" class="btn btn-info">Edit</a>
+                    <a asp-controller="Home" asp-action="Details" asp-route-id="@item.Id" class="btn btn-success">View</a>
+                    <a asp-controller="Home" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+
+
+

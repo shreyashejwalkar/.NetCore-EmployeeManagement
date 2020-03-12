@@ -1,0 +1,144 @@
+﻿.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+body {
+    background-color: #F1F1F1;
+}
+
+h4 {
+    margin: 20px 0 20px 0;
+    text-align: center;
+    padding:30px;
+}
+
+#addemp {
+    margin: 20px 0 20px 0;
+}
+.action {
+    margin: 20px 0 20px 0;
+    float:right;
+}
+
+/*# Footer*/
+#footer {
+    background: #000;
+    color: #eee;
+    font-size: 14px;
+    margin-top: 350px;
+}
+
+#footer .copyright {
+    text-align: center;
+    padding: 30px;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px; /* Height of navbar */
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+    border: 1px solid #dddddd;
+    padding: 10px 10px;
+    margin-bottom:5px;
+}
+
+    .sidebar .nav-link .feather {
+        margin-right: 4px;
+        color: #999;
+    }
+
+    .sidebar .nav-link.active {
+        color: #007bff;
+    }
+
+        .sidebar .nav-link:hover .feather,
+        .sidebar .nav-link.active .feather {
+            color: inherit;
+        }
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+label {
+   
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding-right: 50px;
+}
+.candidateName {
+    font-size:25px;
+    color:#00b1b1;
+}
+/*Home Page*/
+.carousel-item {
+    height: 65vh;
+    min-height: 200px;
+    min-width:200px;
+    background: no-repeat center center scroll;
+    background-size:cover;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.title {
+    margin-bottom: 200px;
+    font-weight: 400;
+    font-size: 80px;
+}
+
+.content {
+    margin-bottom: 50px;
+    font-size: 30px;
+}
